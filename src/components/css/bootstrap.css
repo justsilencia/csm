@@ -3319,7 +3319,7 @@ tbody.collapse.show {
   display: flex;
   align-items: center;
   padding: 0.48rem .35rem .4rem .25rem;
-  font-size: .5rem !important;
+  font-size: 2rem !important;
   line-height: inherit;
   white-space: nowrap;
   font-family: Zaf, Constantia !important;
