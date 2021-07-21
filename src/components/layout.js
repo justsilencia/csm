@@ -40,7 +40,7 @@ const Layout = ({ children }) => {
         <div className="collapse navbar-collapse" id="navbarResponsive">
           <ul className="navbar-nav ml-4">
             <li className="nav-item mr-4">
-              <Link className="nav-link bg-info" to="/blog/">
+              <Link className="nav-link bg-info" to="/signup/">
                 Sign Up
               </Link>
             </li>
@@ -75,7 +75,7 @@ const Layout = ({ children }) => {
                       </Link>
                     </li>
                     <li className="dropdown-item">
-                      <Link className="nav-link bg-info" to="/blog/">
+                      <Link className="nav-link bg-info" to="/contactus">
                         Contact
                       </Link>
                     </li>
@@ -86,14 +86,19 @@ const Layout = ({ children }) => {
       </div>
     </nav>
       <div>
-        <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
-          © {new Date().getFullYear()}, Credit Score Maestro LLC
-        </footer>
+          <main>
+            {children}
+          </main>
+          <footer className="py-5 bg-dark">
+            <div className="container">
+              <p className="m-0 text-center text-white">
+                &nbsp;&nbsp;<Link to="/TermsOfUse" id="HyperLink1">Terms of Use</Link>&nbsp;&nbsp; | 
+                &nbsp;&nbsp;<Link to="/ContactUs" id="HyperLink2">Contact Us</Link>&nbsp;&nbsp; | 
+                &nbsp;&nbsp;<Link to="/AboutUs" id="HyperLink17">About Us</Link>
+                &nbsp;&nbsp;© {new Date().getFullYear()}, Credit Score Maestro LLC
+              </p>
+            </div>
+          </footer>
       </div>
     </>
   )

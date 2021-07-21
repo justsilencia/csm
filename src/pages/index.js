@@ -21,7 +21,11 @@ const IndexPage = () => (
            <div class="commentbox">
             <table>
                 <tr>
-                    <td></td>
+                    <td>
+                        <StaticImage class="checkbox-img"
+                            alt="Check box." 
+                            src="../images/check1.png" id="Image2" />
+                    </td>
                     <td>
                         <div class="comment">
                             First, obtain a credit report from each of the three reporting agencies.
@@ -33,7 +37,11 @@ const IndexPage = () => (
             <div class="commentbox">
             <table>
                 <tr>
-                    <td></td>
+                    <td>
+                        <StaticImage class="checkbox-img"
+                            alt="Check box." 
+                            src="../images/check1.png" id="Image1" />
+                    </td>
                     <td>
                         <div class="comment">
                             Second, use the knowledge we offer to reverse any negative aspects of your credit.
@@ -50,14 +58,18 @@ const IndexPage = () => (
                     <h3 class="card-title">
                         Credit Calculator
                     </h3>
-                    
+                    <StaticImage 
+                        alt="Credit repair calculator." 
+                        src="../images/Credit-Calc-Cropped.jpg" id="Image1" />
                     <br />
                     <div class="card-text blog-description-text">
                         Download our free credit repair and debt calculator.
                     </div>
                 </div>
                 <div class="card-footer">
-                    
+                <a href="/static/CSM-Calculator.xlsx" id="CreditCalcLink" className="btn btn-info" download>
+                    Click here to Download
+                </a>
                 </div>
             </div>
         </div>
@@ -69,13 +81,17 @@ const IndexPage = () => (
                     </h3>
                     <div class="card-text blog-description-text">
                         Unlike most credit repair "pros," Credit Score Maestro treats more than the symptom of bad credit.
-                        Our 
-                        credit repair book
-                        leads the industry in explaining how building credit really works.
+                        Our&nbsp;
+                        <Link to="https://www.amazon.com/Winning-Credit-Score-Game-Complete/dp/0999415301/">
+                            credit repair book
+                        </Link>
+                        &nbsp;leads the industry in explaining how building credit really works.
                     </div>
                 </div>
                 <div class="card-footer">
-                    
+                    <a href="/static/Excerpt-Game-Management.pdf" id="CreditCalcLink" className="btn btn-info" download>
+                        Read an Excerpt
+                    </a>
                 </div>
             </div>
         </div>
