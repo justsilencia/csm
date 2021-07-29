@@ -6,25 +6,25 @@ import SEO from "../components/seo"
 
 const BlogsPage = () => {
 
-    // const data = useStaticQuery(
-    //     graphql`
-    //         query{
-    //             allContentfulBlogPost(sort: { fields: publishedDate, order: DESC }) {
-    //                 edges {
-    //                   node {
-    //                     id
-    //                     publishedDate
-    //                     excerpt {
-    //                       excerpt
-    //                     }
-    //                     title
-    //                   }
-    //                 }
-    //               }
-    //         }
-    //     `
-    // )
-    const data = [];
+    const data = useStaticQuery(
+        graphql`
+            query{
+                allContentfulBlogPost(sort: { fields: publishedDate, order: DESC }) {
+                    edges {
+                      node {
+                        id
+                        publishedDate
+                        excerpt {
+                          excerpt
+                        }
+                        title
+                      }
+                    }
+                  }
+            }
+        `
+    )
+    //const data = [];
 
   
 

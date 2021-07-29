@@ -4,7 +4,7 @@ import SEO from "../components/seo";
 
  const SignUp = () => (
      <Layout>
-         <SEO title="Home" />
+        <SEO title="Home" />
         <div className="mt-5">
             test
         </div>

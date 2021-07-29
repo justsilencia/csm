@@ -13,15 +13,15 @@ import { StaticImage } from "gatsby-plugin-image";
 import "./css/bootstrap.css"
 
 const Layout = ({ children }) => {
-  // const data = useStaticQuery(graphql`
-  //   query SiteTitleQuery {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //       }
-  //     }
-  //   }
-  // `)
+  const data = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
 
   const [isToggled, setIsToggled] = useState(false);
   const toggle = React.useCallback(() => setIsToggled(!isToggled));
@@ -45,7 +45,7 @@ const Layout = ({ children }) => {
               </Link>
             </li>
             <li className="nav-item mr-4">
-              <Link className="nav-link bg-info" to="/blog/">
+              <Link className="nav-link bg-info" to="/credit-library">
                 Credit Library
               </Link>
             </li>
