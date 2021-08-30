@@ -36,11 +36,10 @@ const Layout = ({ children }) => {
             <StaticImage alt="Logo" src="../images/Logo-Trans.png" width={25} id="BookImg" />
             <h1>Credit Score Maestro</h1>
           </Link>
-        <button aria-expanded={isMobileToggled} onClick={mobileToggle} className={(isMobileToggled === true) ? "navbar-toggler" : "navbar-toggler collapsed"} type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <button onClick={mobileToggle} className={(isMobileToggled === true) ? "navbar-toggler" : "navbar-toggler collapsed"} type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
-        <Collapse in={isMobileToggled}>
-          <div className="navbar-collapse">
+        <div className={(isMobileToggled === true) ? "collapse navbar-collapse show" : "collapse navbar-collapse"} id="navbarResponsive">
           <ul className="navbar-nav ml-4">
             <li className="nav-item mr-4">
               <Link className="nav-link bg-info" to="/signup/">
@@ -85,8 +84,7 @@ const Layout = ({ children }) => {
                 </ul>
             </li>
           </ul>
-          </div>
-        </Collapse>
+        </div>
       </div>
     </nav>
       <div>

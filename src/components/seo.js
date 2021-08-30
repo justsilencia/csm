@@ -67,9 +67,11 @@ function SEO({ description, lang, meta, title }) {
         {
           name: `twitter:description`,
           content: metaDescription,
-        },
+        }
       ].concat(meta)}
-    />
+    >
+      <meta name="robots" content="noindex" />
+    </Helmet>
   )
 }
 
