@@ -285,7 +285,7 @@
     .home-book-img
     {
         z-index: 1;
-        position: absolute;
+        position: absolute !important;
         top: -60px;
         right: -110px;
         box-shadow: 1px 1px 2px 1px black;
