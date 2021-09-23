@@ -3,8 +3,6 @@ import { Link, useStaticQuery } from "gatsby";
 
 import Layout from "../components/layout";
 import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image";
-import clipExcerpt from '../components/clipExcerpt';
-import articleDateFormat from '../components/articleDateFormat';
 import SEO from "../components/seo";
 import "../components/css/CSMLanding.css";
 
@@ -103,7 +101,7 @@ const IndexPage = () => {
                 </div>
           </div>
           <div class="container">
-            <div class="row mt-5">
+            <div class="row">
               {
                   landingBlogs.allContentfulBlogPost.edges.map(edge => {
                     let img = getImage(edge.node.featuredImage);
@@ -111,17 +109,12 @@ const IndexPage = () => {
                     <div class="col-md-4 mb-4">
                         <div class="card h-100 border-0">
                             <div class="card-body">
-                              <a href="/" className="article-link"><b>{ edge.node.title }</b></a>
-                              <p class="card-text blog-description-text">
-                                <small class="post_meta">
-                                  By { edge.node.author } - Published&nbsp; 
-                                  { articleDateFormat(edge.node.publishedDate) }
-                                </small>
-                                <GatsbyImage className="card-img glassy"
+                            <GatsbyImage className="card-img"
                                 alt={edge.node.featuredImage.title}
                                 image={img} />
-                                { clipExcerpt(edge.node.excerpt.excerpt) }
-                              </p>
+                            <h3>
+                                { edge.node.title }
+                            </h3>
                             </div>
                         </div>
                     </div>

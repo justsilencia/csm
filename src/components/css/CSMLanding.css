@@ -274,20 +274,26 @@
     position: relative;
     font-family: zaf;
     font-size: 1.5em;
-    margin-left: 13vw;
+    margin-left: 10vw;
 }
+
 .reviewname { font-family: Berling; font-weight: bold; font-size: .8em;}
 .home-book-img
-    {
-        width: 200px;
-    }
+{
+    width: 200px;
+}
+.readmore {
+    color: #87944f !important;
+    font-weight: bold;
+    cursor: pointer;
+}
 @media (min-width: 768px) {
     .home-book-img
     {
         z-index: 1;
         position: absolute !important;
         top: -60px;
-        right: -110px;
+        left: -140px;
         box-shadow: 1px 1px 2px 1px black;
         width: 100px;
     }
