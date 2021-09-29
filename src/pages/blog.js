@@ -18,13 +18,13 @@ const BlogsPage = () => {
                           excerpt
                         }
                         title
+                        slug
                       }
                     }
                   }
             }
         `
     )
-    //const data = [];
 
   
 
@@ -36,7 +36,9 @@ const BlogsPage = () => {
           {data.allContentfulBlogPost.edges.map(edge => {
               return (
                 <div>
-                    { edge.node.title }
+                    <Link to={"http://localhost:8000/" + edge.node.slug}>
+                      {edge.node.title}
+                    </Link>
                 </div>
               )
           })}

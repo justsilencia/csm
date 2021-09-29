@@ -10,6 +10,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
+    `@contentful/rich-text-react-renderer`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
